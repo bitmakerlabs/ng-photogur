@@ -1,2 +1,6 @@
-I am index.hamlc
 %a{:href => "/pictures/new"} New Picture
+
+.picture{:"ng-repeat" => "picture in pictures"}
+  %h2 {{picture.title}}
+  %img{:src => "{{picture.url}}"}
+  

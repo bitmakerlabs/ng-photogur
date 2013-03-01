@@ -15,8 +15,8 @@
 
   # Set up the application routes. This is similar to Rails' /config/routes.rb
   $routeProvider
-  .when("/",              {templateUrl: "pictures/index"})
-  .when('/pictures',      {templateUrl: "pictures/index"})
+  .when("/",              {templateUrl: "pictures/index", controller: "PicturesController"})
+  .when('/pictures',      {templateUrl: "pictures/index", controller: "PicturesController"})
   .when('/pictures/show', {templateUrl: "pictures/show"})
   .when('/pictures/new',  {templateUrl: "pictures/new"})
   .when('/pictures/edit', {templateUrl: "pictures/edit"})
