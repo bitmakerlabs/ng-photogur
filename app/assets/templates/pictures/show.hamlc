@@ -1,1 +1,2 @@
-I am show.hamlc
+%h1 {{picture.title}}
+%img{:src => "{{picture.url}}"}

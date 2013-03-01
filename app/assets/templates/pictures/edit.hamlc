@@ -1,1 +1,13 @@
-I am edit.hamlc
+%h1 Editing {{picture.title}}
+%form
+  %p
+    %label Title
+    %input{:type => "text", :value => "{{picture.title}}"}
+  %p
+    %label Author
+    %input{:type => "text", :value => "{{picture.artist}}"}
+  %p
+    %label URL
+    %input{:type => "text", :value => "{{picture.url}}"}
+  %p
+    %input{:type => "submit"}

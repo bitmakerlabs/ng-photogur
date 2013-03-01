@@ -20,4 +20,5 @@
 //= require_tree ../templates
 //= require photogur/initialize
 //= require photogur/pictures_controller
+//= require photogur/picture_controller
 
