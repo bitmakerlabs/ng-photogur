@@ -1,0 +1,2 @@
+I am index.hamlc
+%a{:href => "/pictures/new"} New Picture
