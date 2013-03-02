@@ -1,13 +1,21 @@
-%h1 Editing {{picture.title}}
-%form
-  %p
-    %label Title
-    %input{:type => "text", :value => "{{picture.title}}"}
-  %p
-    %label Author
-    %input{:type => "text", :value => "{{picture.artist}}"}
-  %p
-    %label URL
-    %input{:type => "text", :value => "{{picture.url}}"}
-  %p
-    %input{:type => "submit"}
+.row
+  .span6
+    %h1 Editing {{picture.title}}
+    %form
+      %p
+        %label Title
+        %input{:type => "text", :ng-model => "picture.title"}
+      %p
+        %label Author
+        %input{:type => "text", :ng-model => "picture.author"}
+      %p
+        %label URL
+        %input{:type => "text", :ng-model => "picture.url"}
+      %p
+        %input{:type => "submit"}
+        
+  .span6
+    .well{:ng-show => "picture.author || picture.title || picture.url"}
+      %h2 {{picture.title}}
+      %p{:ng-show => "picture.author"} by {{picture.author}}
+      %img{:ng-src => "{{picture.url}}"}
