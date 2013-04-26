@@ -4,8 +4,8 @@
   .row
     .span12
       %h2 {{picture.title}}
-      %a.pull-right{:href => "/pictures/{{$index}}/edit"} Edit
+      %a.pull-right{:href => "/pictures/{{picture.id}}/edit"} Edit
   .row
     .span12
-      %a{:href => "/pictures/{{$index}}"}
+      %a{:href => "/pictures/{{picture.id}}"}
         %img{:ng-src => "{{picture.url}}"}

@@ -14,6 +14,7 @@
 // VENDOR LIBRARIES
 //= require jquery
 //= require angular-1.0.5.min
+//= require angular-resource-1.0.5.min
 //= require hamlcoffee
 
 // APPLICATION FILES
