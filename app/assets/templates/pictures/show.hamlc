@@ -1,2 +1,5 @@
-%h1 {{picture.title}}
-%img{:src => "{{picture.url}}"}
+.row
+	%a{:href => "/pictures"} Back to Pictures
+.row
+	%h1 {{picture.title}}
+	%img{:ng-src => "{{picture.url}}"}

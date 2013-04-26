@@ -2,7 +2,10 @@
 
 .picture{:"ng-repeat" => "picture in pictures"}
   .row
-    %h2 {{picture.title}}
+    .span12
+      %h2 {{picture.title}}
+      %a.pull-right{:href => "/pictures/{{$index}}/edit"} Edit
   .row
-    %img{:src => "{{picture.url}}"}
-  
+    .span12
+      %a{:href => "/pictures/{{$index}}"}
+        %img{:ng-src => "{{picture.url}}"}

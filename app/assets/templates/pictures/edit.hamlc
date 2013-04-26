@@ -6,16 +6,17 @@
         %label Title
         %input{:type => "text", :ng-model => "picture.title"}
       %p
-        %label Author
-        %input{:type => "text", :ng-model => "picture.author"}
+        %label Artist
+        %input{:type => "text", :ng-model => "picture.artist"}
       %p
         %label URL
         %input{:type => "text", :ng-model => "picture.url"}
       %p
-        %input{:type => "submit"}
+        %input{:type => "submit", :ng-click => "updatePicture()"}
+        %a{:href => "/pictures"} Back
         
   .span6
-    .well{:ng-show => "picture.author || picture.title || picture.url"}
+    .well{:ng-show => "picture.artist || picture.title || picture.url"}
       %h2 {{picture.title}}
-      %p{:ng-show => "picture.author"} by {{picture.author}}
+      %p{:ng-show => "picture.artist"} by {{picture.artist}}
       %img{:ng-src => "{{picture.url}}"}
